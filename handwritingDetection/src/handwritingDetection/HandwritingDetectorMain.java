@@ -18,13 +18,11 @@ public class HandwritingDetectorMain {
 			e.printStackTrace();
 		 }
 		
-		// detectDocumentText() will return a String that will go in the output file.
 		try 
 		{
-			HandwritingDetector.detectDocumentText("resource/image2.jpg");
-			
+			String result = HandwritingDetector.detectDocumentText("resource/image2.jpg");
 			FileWriter myWriter = new FileWriter("resource/output.txt");
-		    myWriter.write("output from detectDocumentText");
+		    myWriter.write(result);
 		    myWriter.close();
 		}
 		catch (IOException e)
