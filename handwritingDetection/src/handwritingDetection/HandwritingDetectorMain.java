@@ -1,18 +1,31 @@
 package handwritingDetection;
 
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 
 public class HandwritingDetectorMain {
 	
-	/**
-	 * Main method
-	 */
 	public static void main(String args[]) {
-		
-		
 		try 
 		{
-			HandwritingDetector.detectDocumentText("resource/helloWorld.jpg");
+			File file = new File("resource/output.txt");
+			file.createNewFile();
+		}
+		catch (IOException e) 
+		{
+			System.out.println("An error occurred creating the file.");
+			e.printStackTrace();
+		 }
+		
+		// detectDocumentText() will return a String that will go in the output file.
+		try 
+		{
+			HandwritingDetector.detectDocumentText("resource/image2.jpg");
+			
+			FileWriter myWriter = new FileWriter("resource/output.txt");
+		    myWriter.write("output from detectDocumentText");
+		    myWriter.close();
 		}
 		catch (IOException e)
 		{
