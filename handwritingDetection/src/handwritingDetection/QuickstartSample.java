@@ -25,7 +25,7 @@ public static void main(String... args) throws Exception {
  try (ImageAnnotatorClient vision = ImageAnnotatorClient.create()) {
 
    // The path to the image file to annotate
-   String fileName = "";
+   String fileName = "/Users/koja/Downloads/UCF/SwampHacks2021/visionAPI_example/wakeupcat.jpg";
 
    // Reads the image file into memory
    Path path = Paths.get(fileName);
