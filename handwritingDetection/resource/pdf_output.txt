@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 came
 Today's SwampHacks 2021
 Kim: How is Daniela today?
@@ -26,3 +27,6 @@ treel
 you are
 so funny!
 o o
+=======
+Hello world!
+>>>>>>> branch 'main' of https://github.com/project-team-dkk/SwampHacks2021

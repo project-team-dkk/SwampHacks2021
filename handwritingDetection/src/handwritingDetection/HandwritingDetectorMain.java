@@ -20,6 +20,7 @@ public class HandwritingDetectorMain {
 		
 		try 
 		{
+<<<<<<< HEAD
 			String result = HandwritingDetector.detectDocumentText("resource/image2.jpg");
 			FileWriter myWriter = new FileWriter("resource/output2.txt");
 			myWriter.write(result);
@@ -29,6 +30,12 @@ public class HandwritingDetectorMain {
 			myWriter = new FileWriter("resource/pdf_output.txt");
 			myWriter.write(text);
 			myWriter.close();
+=======
+			String result = HandwritingDetector.detectDocumentText("resource/image3.jpg");
+			FileWriter myWriter = new FileWriter("resource/output.txt");
+		    myWriter.write(result);
+		    myWriter.close();
+>>>>>>> branch 'main' of https://github.com/project-team-dkk/SwampHacks2021
 		}
 		catch (IOException e)
 		{

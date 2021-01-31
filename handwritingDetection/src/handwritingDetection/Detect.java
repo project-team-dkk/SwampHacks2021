@@ -66,7 +66,7 @@ public class Detect {
 	 * @throws IOException on Input/Output errors.
 	 */
 	// [START vision_fulltext_detection]
-	public static void detectDocumentText(String filePath) throws IOException {
+	public static String detectDocumentText(String filePath) throws IOException {
 		List<AnnotateImageRequest> requests = new ArrayList<>();
 
 		ByteString imgBytes = ByteString.readFrom(new FileInputStream(filePath));
@@ -88,7 +88,7 @@ public class Detect {
 			for (AnnotateImageResponse res : responses) {
 				if (res.hasError()) {
 					System.out.format("Error: %s%n", res.getError().getMessage());
-					return;
+					return "ERROR";
 				}
 
 				// For full list of available annotations, see http://g.co/cloud/vision/docs
@@ -121,8 +121,10 @@ public class Detect {
 				}
 				System.out.println("%nComplete annotation:");
 				System.out.println(annotation.getText());
+				return annotation.getText();
 			}
 		}
+		return "";
 	}
 	// [END vision_fulltext_detection]
 
