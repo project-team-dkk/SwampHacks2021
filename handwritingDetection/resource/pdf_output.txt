@@ -1,32 +1,44 @@
-<<<<<<< HEAD
-came
-Today's SwampHacks 2021
-Kim: How is Daniela today?
-Daniela Tired.
-New set of mentors tried to help.
-Kim
-back with soul crushed
-more.
-we
-all need
-a nap.
-Daniela had а a ham and cheese
-Sandwich.
-Why does Daniela prefer ham?
-Daniela: "I just thought it was good."
-Daniela and kim love Bob's Burger.
-veux pas manger un sandwich.
-Kohei finished eating
-Kohei ate
-sandwich. He had an egg
-accident,
-Je ne
-а a
-Hi, fellow
-treel
-you are
-so funny!
-o o
-=======
-Hello world!
->>>>>>> branch 'main' of https://github.com/project-team-dkk/SwampHacks2021
+Discussion
+vals
+care
+on single care
+care autoring
+increarated
+SariST IS
+more a more components o features can be
+single che
+Perhaps" transitions from Usingle's multicore was
+a matter of time.
+just
+•But why did it happen in that sequence ?
+- Why did pipelining branch prediction, spescalar
+BEFORE multicare??
+Power Usage / Meat. [laver wall]
+Cauld not make improvements on
+single
+[menay wall memory access speed groiz
+too slow
+Anawr Law Hanging fruit Theum
+La band
+fichs ve
+yaw hanging fout be they require
+efforts to pich ve, and we aim at of
+an hanging fruit
+• ILP Fruits
+Instruction Level Parallelism (ILO)
+-Pipelining : RISC, CISG w/ Risc backed
+Spescalar
+Good
+Out of orde exeation
+•Memany Hierarchy (lacher)
+- Exploiting spatial & temporal locality
+- Multiple Cache levels
+Le :
+A la lechnique lifelining men / WB
+FIDEX
+ess
+law
+H.
+B
+MEM /wB
+с C

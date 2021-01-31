@@ -20,22 +20,30 @@ public class HandwritingDetectorMain {
 		
 		try 
 		{
-<<<<<<< HEAD
-			String result = HandwritingDetector.detectDocumentText("resource/image2.jpg");
-			FileWriter myWriter = new FileWriter("resource/output2.txt");
-			myWriter.write(result);
-			myWriter.close();
 			
-			String text = Detect.detectDocumentsGcs("gs://swamphacks21/SwampHacks.pdf", "gs://swamphacks21/sample");
-			myWriter = new FileWriter("resource/pdf_output.txt");
+			String pdfFilePath = (args.length >= 1) ? args[0] : "gs://swamphacks21/SwampHacks.pdf";
+			File pdfFile = new File(pdfFilePath);
+			String pdfFileName = pdfFile.getName();
+			UploadObject.uploadObject("symmetric-flare-303303", "swamphacks21",
+					pdfFileName, pdfFilePath);
+			String gcsSrcPath = "gs://swamphacks21/" + pdfFileName;
+			
+//<<<<<<< HEAD
+//			String result = HandwritingDetector.detectDocumentText("resource/image2.jpg");
+//			FileWriter myWriter = new FileWriter("resource/output2.txt");
+//			myWriter.write(result);
+//			myWriter.close();
+			
+			String text = Detect.detectDocumentsGcs(gcsSrcPath, "gs://swamphacks21/sample");
+			FileWriter myWriter = new FileWriter("resource/pdf_output.txt");
 			myWriter.write(text);
 			myWriter.close();
-=======
-			String result = HandwritingDetector.detectDocumentText("resource/image3.jpg");
-			FileWriter myWriter = new FileWriter("resource/output.txt");
-		    myWriter.write(result);
-		    myWriter.close();
->>>>>>> branch 'main' of https://github.com/project-team-dkk/SwampHacks2021
+//=======
+//			String result = HandwritingDetector.detectDocumentText("resource/image3.jpg");
+//			FileWriter myWriter = new FileWriter("resource/output.txt");
+//		    myWriter.write(result);
+//		    myWriter.close();
+//>>>>>>> branch 'main' of https://github.com/project-team-dkk/SwampHacks2021
 		}
 		catch (IOException e)
 		{
