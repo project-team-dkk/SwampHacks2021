@@ -6,10 +6,10 @@ import java.io.IOException;
 
 public class FileCreation {
 	
-	public static void createFile(String filePath) {
+	public static void createFile(String result) {
 		try 
 		{
-			File file = new File("resource/output2.txt");
+			File file = new File("resource/pdf_output.txt");
 			file.createNewFile();
 		}
 		catch (IOException e) 
@@ -20,8 +20,7 @@ public class FileCreation {
 		
 		try 
 		{
-			String result = HandwritingDetector.detectDocumentText(filePath);
-			FileWriter myWriter = new FileWriter("resource/output2.txt");
+			FileWriter myWriter = new FileWriter("resource/pdf_output.txt");
 		    myWriter.write(result);
 		    myWriter.close();
 		}
