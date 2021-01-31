@@ -21,13 +21,22 @@ public class HandwritingDetectorMain {
 		try 
 		{
 			String result = HandwritingDetector.detectDocumentText("resource/image2.jpg");
-			FileWriter myWriter = new FileWriter("resource/output.txt");
-		    myWriter.write(result);
-		    myWriter.close();
+			FileWriter myWriter = new FileWriter("resource/output2.txt");
+			myWriter.write(result);
+			myWriter.close();
+			
+			String text = Detect.detectDocumentsGcs("gs://swamphacks21/SwampHacks.pdf", "gs://swamphacks21/sample");
+			myWriter = new FileWriter("resource/pdf_output.txt");
+			myWriter.write(text);
+			myWriter.close();
 		}
 		catch (IOException e)
 		{
 			System.err.println(e.getMessage());
+		}
+		catch (Exception e)
+		{
+			System.err.println(e);
 		}
 	}
 	
