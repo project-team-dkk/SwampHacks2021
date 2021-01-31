@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 4bfe4a000900f328282f682f99df5aedfef659f0
 came
 Today's SwampHacks 2021
 Kim: How is Daniela today?
@@ -30,9 +26,3 @@ treel
 you are
 so funny!
 o o
-<<<<<<< HEAD
-=======
-=======
-Hello world!
->>>>>>> branch 'main' of https://github.com/project-team-dkk/SwampHacks2021
->>>>>>> 4bfe4a000900f328282f682f99df5aedfef659f0
