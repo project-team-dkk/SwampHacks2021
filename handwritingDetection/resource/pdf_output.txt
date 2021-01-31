@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Discussion
 vals
 care
@@ -42,3 +43,33 @@ H.
 B
 MEM /wB
 с C
+=======
+came
+Today's SwampHacks 2021
+Kim: How is Daniela today?
+Daniela Tired.
+New set of mentors tried to help.
+Kim
+back with soul crushed
+more.
+we
+all need
+a nap.
+Daniela had а a ham and cheese
+Sandwich.
+Why does Daniela prefer ham?
+Daniela: "I just thought it was good."
+Daniela and kim love Bob's Burger.
+veux pas manger un sandwich.
+Kohei finished eating
+Kohei ate
+sandwich. He had an egg
+accident,
+Je ne
+а a
+Hi, fellow
+treel
+you are
+so funny!
+o o
+>>>>>>> branch 'main' of https://github.com/project-team-dkk/SwampHacks2021

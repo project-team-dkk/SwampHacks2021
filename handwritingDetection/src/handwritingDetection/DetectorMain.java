@@ -6,13 +6,15 @@ public class DetectorMain {
 	
 	/**
 	 * Main method
+	 * @throws Exception 
 	 */
-	public static void main(String args[]) {
+	public static void main(String args[]) throws Exception {
 		try 
 		{
-			HandwritingDetector.detectDocumentText("resource/helloWorld.jpg");
+			String result = Detect.detectDocumentsGcs("gs://swamphacks21/SwampHacks.pdf", "gs://swamphacks21/SwampHacks/output");
 			FileCreation obj = new FileCreation();
-			obj.createFile("resource/helloWorld.jpg");
+			obj.createFile(result);
+			
 			
 		}
 		catch (IOException e)
