@@ -204,7 +204,7 @@ public class Detect {
 	 *     results on.
 	 * @throws Exception on errors while closing the client.
 	 */
-	public static void detectDocumentsGcs(String gcsSourcePath, String gcsDestinationPath)
+	public static String detectDocumentsGcs(String gcsSourcePath, String gcsDestinationPath)
 			throws Exception {
 
 		// Initialize client that will be used to send requests. This client only needs to be created
@@ -308,8 +308,10 @@ public class Detect {
 				// annotation/pages/blocks/paragraphs/words/symbols
 				// including confidence score and bounding boxes
 				System.out.format("%nText: %s%n", annotateImageResponse.getFullTextAnnotation().getText());
+				return annotateImageResponse.getFullTextAnnotation().getText();
 			} else {
 				System.out.println("No MATCH");
+				return "NO MATCH";
 			}
 		}
 	}
