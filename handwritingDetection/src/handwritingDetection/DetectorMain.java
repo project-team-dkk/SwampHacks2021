@@ -8,11 +8,12 @@ public class DetectorMain {
 	 * Main method
 	 */
 	public static void main(String args[]) {
-		
-		
 		try 
 		{
 			HandwritingDetector.detectDocumentText("resource/helloWorld.jpg");
+			FileCreation obj = new FileCreation();
+			obj.createFile("resource/helloWorld.jpg");
+			
 		}
 		catch (IOException e)
 		{

@@ -4,12 +4,12 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class HandwritingDetectorMain {
+public class FileCreation {
 	
-	public static void main(String args[]) {
+	public static void createFile(String filePath) {
 		try 
 		{
-			File file = new File("resource/output.txt");
+			File file = new File("resource/output2.txt");
 			file.createNewFile();
 		}
 		catch (IOException e) 
@@ -20,8 +20,8 @@ public class HandwritingDetectorMain {
 		
 		try 
 		{
-			String result = HandwritingDetector.detectDocumentText("resource/image3.jpg");
-			FileWriter myWriter = new FileWriter("resource/output.txt");
+			String result = HandwritingDetector.detectDocumentText(filePath);
+			FileWriter myWriter = new FileWriter("resource/output2.txt");
 		    myWriter.write(result);
 		    myWriter.close();
 		}
